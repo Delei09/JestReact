@@ -2,18 +2,20 @@ import React from 'react'
 import Logo from '../images/logo.png'
 import Styles from '../style/header.module.css'
 
-type propsType = {
-    title : string
-}
 
-const Header : React.FC<propsType> = ({title} ) => {
+
+const Header : React.FC = ({ children} ) => {
 
     return(
         <header className = {Styles.header} >
             <div>
                 <a href = 'w' className = {Styles.logoName}> <img className = {Styles.logo}  src = {Logo} alt = 'Logo' /> Planefinan   </a>
             </div>
-            {title !== 'Cadastro' ?  <div className = {Styles.divLogin} >
+            <div>
+                {children}
+            </div>
+        
+            {/* {title !== 'Cadastro' ?  <div className = {Styles.divLogin} >
                 <li>
                    <a href = 'w' >Login</a>
                 </li>
@@ -24,7 +26,7 @@ const Header : React.FC<propsType> = ({title} ) => {
 
             { title === 'Cadastro' ?   <li>
                    <a href = 'w' > Pagina de {title}</a>
-                </li>: ''}
+                </li>: ''} */}
             
         </header>
     )

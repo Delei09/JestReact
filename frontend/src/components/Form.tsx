@@ -1,25 +1,14 @@
 import React from 'react'
-import Styles from '../style/cadastro.module.css'
+import Styles from '../style/form.module.css'
 import {AiOutlineUser , AiFillMail , AiFillLock , AiOutlineWhatsApp} from 'react-icons/ai'
 
-const Cadastro = () => {
+const Form = () => {
     return (
-        <form className = {Styles.cadastro} >
-            <div>
-                <input type = 'text' required />
-                <AiOutlineUser className = {Styles.icon} />
-                <label >Nome</label>
-            </div>
+        <form className = {Styles.form}  >
             <div>
                 <input type = 'text' required />
                 <AiFillMail className = {Styles.icon}  />
                 <label >Email</label>
-            </div>
-            <div>
-               
-                <input type = 'tel' required />
-                <AiOutlineWhatsApp className = {Styles.icon}  />
-                <label >Telefone</label>
             </div>
             <div>
                 <input type = 'password' required />
@@ -27,11 +16,11 @@ const Cadastro = () => {
                 <label >Senha</label>
             </div>
             <button className = {Styles.button}>
-                Salvar
+                Logar
             </button>
         </form>
 
     )
 }
 
-export default Cadastro
+export default Form

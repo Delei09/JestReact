@@ -1,6 +1,6 @@
 import React from 'react';
 import './style/global.css'
-import Login from './telas/login';
+import Login from './telas/Login';
 
 function App() {
   return (

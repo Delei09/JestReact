@@ -6,10 +6,13 @@ const Login = () => {
 
     return(
         <>
-            <Header title = "Cadastro" />
+           <Header >
+                <h4>Pagina de Cadastro</h4>
+            </Header>
             <Cadastro />
         </>
     )
+
 }
 
 export default Login 

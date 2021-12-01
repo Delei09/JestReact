@@ -9,7 +9,9 @@ import Footer from '../components/Footer'
 const Inicio = () => {
     return(
         <>
-            <Header title = 'App de Planejamento Financeiro' />
+            <Header >
+                <h4>Pagina Inicial</h4>
+            </Header>
             <Main >
                 <div className = {Styles.main} >
                     <div className = {Styles.divTexto}>
